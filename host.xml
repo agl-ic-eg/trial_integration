@@ -10,19 +10,16 @@
 	<default revision="master" />
 
 	<!-- Yocto Layers -->
-	<project path="poky" name="poky" remote="yocto" revision="thud" />
+	<project path="poky" name="poky" remote="yocto" revision="refs/tags/dunfell-23.0.5" />
 
 	<!-- Openembedded Layers -->
-	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
-	<project path="meta-linaro" name="meta-linaro" remote="linaro" revision="0a94decea3bd2504590d1637eadff9d502c19ee2" />
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
 
 	<!-- function Layers -->
-	<project path="meta-containers" name="meta-containers" remote="aglexport" revision="master" upstream="master" />
 
 	<!-- distro Layers -->
-	<project path="meta-container-host-example" name="meta-container-host-example" remote="aglexport" revision="master" upstream="master" />
 
 	<!-- bsp Layers -->
-	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/thud-Yocto-v3.21.0" />
+	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/dunfell-Yocto-v4.7.0" />
 </manifest>
 
