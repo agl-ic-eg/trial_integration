@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
+	<remote  name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
+	<remote  name="linaro" fetch="git://git.linaro.org/openembedded" pushurl="git://git.linaro.org/openembedded" />
+	<remote  name="renesas-rcar" fetch="https://github.com/renesas-rcar" pushurl="https://github.com/renesas-rcar" />
+	<remote  name="agl-ic-eg" fetch="https://github.com/agl-ic-eg/" pushurl="https://github.com/agl-ic-eg/" />
+	<remote  name="aglexport" fetch="https://github.com/AGLExport/" pushurl="https://github.com/AGLExport/" />
+	
+	<default revision="master" />
+
+	<!-- Yocto Layers -->
+	<project path="poky" name="poky" remote="yocto" revision="thud" />
+
+	<!-- Openembedded Layers -->
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="4cd3a39f22a2712bfa8fc657d09fe2c7765a4005" />
+	<project path="meta-linaro" name="meta-linaro" remote="linaro" revision="0a94decea3bd2504590d1637eadff9d502c19ee2" />
+
+	<!-- function Layers -->
+	<project path="meta-containers" name="meta-containers" remote="aglexport" revision="master" upstream="master" />
+
+	<!-- distro Layers -->
+	<project path="meta-container-host-example" name="meta-container-host-example" remote="aglexport" revision="master" upstream="master" />
+
+	<!-- bsp Layers -->
+	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/thud-Yocto-v3.21.0" />
+</manifest>
+
