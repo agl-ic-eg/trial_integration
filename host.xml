@@ -19,6 +19,7 @@
 
 	<!-- distro Layers -->
 	<project path="meta-agl-qm" name="meta-agl-qm" remote="aglexport" revision="main" />
+	<project path="meta-agl" name="meta-agl" remote="aglexport" revision="work" />
 	
 	<!-- bsp Layers -->
 	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/dunfell-Yocto-v4.7.0" />
