@@ -3,7 +3,7 @@
 repo init -u https://github.com/AGLExport/trial_integration.git -b working -m host.xml  
   
 TODO:  
-repo init -u https://github.com/AGLExport/trial_integration.git -b working -m host.xml  
+repo init -u https://github.com/AGLExport/trial_integration.git -b working -m guest-xxx.xml  
 
 
 Renesas R-Car bsp 4.7を使用しているので、それのgfxセットアップ手順を実行する
