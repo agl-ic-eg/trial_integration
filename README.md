@@ -2,13 +2,16 @@
 
 Each local.conf and bblayers.conf is included in this repo.  Please clone this repo. to local.  
 
+git clone https://github.com/AGLExport/trial_integration.git  
+git checkout audiodev  
+
 
 ## host
 The host is based on minimal agl qm env.  It's now developing.  
 
 ### Create local tree  
 
-repo init -u https://github.com/AGLExport/trial_integration.git -b working -m host.xml  
+repo init -u https://github.com/AGLExport/trial_integration.git -b audiodev -m host.xml  
 
 ### Install eva binary  
 Ref To :  
@@ -29,7 +32,7 @@ The dummy guest is based on minimal agl ivi.  It's including many workarounds.
 
 ### Create local tree  
 
-repo init -u https://github.com/AGLExport/trial_integration.git -b working -m dummy-guest.xml  
+repo init -u https://github.com/AGLExport/trial_integration.git -b audiodev -m dummy-guest.xml  
 
 ### Install eva binary  
 Ref To :  
@@ -50,7 +53,7 @@ The cluster guest is based on minimal agl qm env.  It's now developping.
 
 ### Create local tree  
 
-repo init -u https://github.com/AGLExport/trial_integration.git -b working -m cluster-guest.xml  
+repo init -u https://github.com/AGLExport/trial_integration.git -b audiodev -m cluster-guest.xml  
 
 ### Install eva binary  
 Ref To :  
