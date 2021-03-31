@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
+	<remote  name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
+	<remote  name="linaro" fetch="git://git.linaro.org/openembedded" pushurl="git://git.linaro.org/openembedded" />
+	<remote  name="renesas-rcar" fetch="https://github.com/renesas-rcar" pushurl="https://github.com/renesas-rcar" />
+	<remote  name="agl-ic-eg" fetch="https://github.com/agl-ic-eg/" pushurl="https://github.com/agl-ic-eg/" />
+	<remote  name="aglexport" fetch="https://github.com/AGLExport/" pushurl="https://github.com/AGLExport/" />
+	
+	<default revision="master" />
+
+	<!-- Yocto Layers -->
+	<project path="poky" name="poky" remote="yocto" revision="refs/tags/dunfell-23.0.5" />
+
+	<!-- Openembedded Layers -->
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
+
+	<!-- function Layers -->
+
+	<!-- distro Layers -->
+	<project path="meta-agl-qm" name="meta-agl-qm" remote="aglexport" revision="91abdce507b6d4a313bc28bc096b21934dfcd18f" />
+	<project path="meta-agl" name="meta-agl" remote="aglexport" revision="9ffb3bb60c39f6fc9da2ad32691a99b1b0172417" />
+	
+	<!-- bsp Layers -->
+	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/dunfell-Yocto-v4.7.0" />
+</manifest>
+
