@@ -6,6 +6,7 @@
 	<remote  name="renesas-rcar" fetch="https://github.com/renesas-rcar" pushurl="https://github.com/renesas-rcar" />
 	<remote  name="agl-ic-eg" fetch="https://github.com/agl-ic-eg/" pushurl="https://github.com/agl-ic-eg/" />
 	<remote  name="aglexport" fetch="https://github.com/AGLExport/" pushurl="https://github.com/AGLExport/" />
+	<remote  name="qt5" fetch="https://github.com/meta-qt5/"  pushurl="https://github.com/meta-qt5/" />
 	
 	<default revision="master" />
 
@@ -14,6 +15,9 @@
 
 	<!-- Openembedded Layers -->
 	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
+
+	<!-- Qt things -->
+	<project path="meta-qt5" name="meta-qt5" remote="qt5" revision="0d8eb956015acdea7e77cd6672d08dce18061510" upstream="dunfell"/>
 
 	<!-- function Layers -->
 
