@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+	<remote name="agl"
+		fetch="https://gerrit.automotivelinux.org/gerrit/"
+		review="https://gerrit.automotivelinux.org/gerrit/"
+		pushurl="ssh://gerrit.automotivelinux.org:29418"
+	/>
 	<remote  name="yocto" fetch="git://git.yoctoproject.org/" pushurl="git://git.yoctoproject.org/" />
 	<remote  name="openembedded" fetch="git://git.openembedded.org/" pushurl="git://git.openembedded.org/" />
 	<remote  name="linaro" fetch="git://git.linaro.org/openembedded" pushurl="git://git.linaro.org/openembedded" />
@@ -19,10 +24,11 @@
 
 	<!-- distro Layers -->
 	<project path="meta-agl-qm" name="meta-agl-qm" remote="aglexport" revision="91abdce507b6d4a313bc28bc096b21934dfcd18f" />
-	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev" />
-	<project path="meta-agl-devel" name="meta-agl-devel" remote="agl-ic-eg" revision="sandbox/dhobsong/drm-lease-manager" />
+	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev-r1" />
+	<project path="meta-agl-devel" name="AGL/meta-agl-devel" remote="agl" revision="193f763742b172b1b8b697a9ee5441406873955d" />
 	
 	<!-- bsp Layers -->
 	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/dunfell-Yocto-v4.7.0" />
+	<project path="container-bsp" name="container-bsp" remote="agl-ic-eg" revision="dev-r1" upstream="dev-r1"/>
 </manifest>
 
