@@ -98,6 +98,8 @@ When you want to login cluster-guest,
 lxc-attach -n cluster-guest  
 
 Then, you can launch the cluster demo application with following commands:
+
 export XDG_RUNTIME_DIR=/tmp
+
 /opt/apps/cluster
 
