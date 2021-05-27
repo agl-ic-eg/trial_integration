@@ -65,7 +65,7 @@ source poky/oe-init-build-env
 cp /path/to/thisrepo/trial_integration/cluster-guestconf/* conf/
 
 
-### Build dummy-guest  
+### Build cluster-guest  
 bitbake guest-ic-image-minimal  
 
 
@@ -97,4 +97,7 @@ lxc-start -n dummy-guest
 When you want to login cluster-guest,  
 lxc-attach -n cluster-guest  
 
+Then, you can launch the cluster demo application with following commands:
+export XDG_RUNTIME_DIR=/tmp
+/opt/apps/cluster
 
