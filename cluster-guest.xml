@@ -16,10 +16,10 @@
 	<default revision="master" />
 
 	<!-- Yocto Layers -->
-	<project path="poky" name="poky" remote="yocto" revision="refs/tags/dunfell-23.0.5" />
+	<project path="poky" name="poky" remote="yocto" revision="refs/tags/dunfell-23.0.9" />
 
 	<!-- Openembedded Layers -->
-	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="de37512b25c1f8c6bb6ab2b3782ac0fe01443483" />
+	<project path="meta-openembedded" name="meta-openembedded" remote="openembedded" revision="11eae114522a6befa06c7f4021a83bc016133543" />
 
 	<!-- Demo Layers -->
 	<project path="meta-agl-demo-cluster" name="meta-agl-demo-cluster" remote="agl-ic-eg" revision="main" />
@@ -29,11 +29,11 @@
 
 	<!-- distro Layers -->
 	<project path="meta-agl-qm" name="meta-agl-qm" remote="aglexport" revision="91abdce507b6d4a313bc28bc096b21934dfcd18f" />
-	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev" />
-	<project path="meta-agl-devel" name="AGL/meta-agl-devel" remote="agl" revision="193f763742b172b1b8b697a9ee5441406873955d" />
+	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev-rcar-bsp5.1.0" />
+	<project path="meta-agl-devel" name="meta-agl-devel" remote="agl-ic-eg" revision="dev-rcar-bsp5.1.0" />
 	
 	<!-- bsp Layers -->
-	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/dunfell-Yocto-v4.7.0" />
+	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="a5c25c2ae6710fab5796a5fdc56117c819a4d7e5" />
 	<project path="container-bsp" name="container-bsp" remote="agl-ic-eg" revision="dev" />
 </manifest>
 
