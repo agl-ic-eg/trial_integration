@@ -25,11 +25,11 @@
 
 	<!-- distro Layers -->
 	<project path="meta-agl-qm" name="meta-agl-qm" remote="aglexport" revision="91abdce507b6d4a313bc28bc096b21934dfcd18f" />
-	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev-rcar-bsp5.1.0" />
-	<project path="meta-agl-devel" name="meta-agl-devel" remote="agl-ic-eg" revision="dev-rcar-bsp5.1.0" />
+	<project path="meta-agl" name="meta-agl" remote="agl-ic-eg" revision="dev-rcar-bsp5.5.0" />
+	<project path="meta-agl-devel" name="meta-agl-devel" remote="agl-ic-eg" revision="dev-rcar-bsp5.5.0" />
 	
 	<!-- bsp Layers -->
-	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="a5c25c2ae6710fab5796a5fdc56117c819a4d7e5" />
-	<project path="container-bsp" name="container-bsp" remote="agl-ic-eg" revision="dev" />
+	<project path="meta-renesas" name="meta-renesas" remote="renesas-rcar" revision="refs/tags/Renesas-Yocto-v5.5.0" />
+	<project path="container-bsp" name="container-bsp" remote="agl-ic-eg" revision="dev-rcar-bsp5.5.0" />
 </manifest>
 
