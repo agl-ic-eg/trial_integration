@@ -84,6 +84,11 @@ cd /path/to/sdcard/opt/guests/dummy-guest/
 
 tar xvjf /path/to/host/deploydir/core-image-minimal-h3ulcb.tar.bz2  
 
+* It is workarround from bsp5.1.0 or later.
+
+cd /path/to/sdcard/
+cp opt/guests/cluster-guest/lib/firmware/ ./lib/ -a
+
 
 # How to run  
 
